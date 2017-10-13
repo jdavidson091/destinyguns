@@ -1,7 +1,6 @@
-from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-from destinyguns.project import app
+from old_proj.destinyguns import app
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
